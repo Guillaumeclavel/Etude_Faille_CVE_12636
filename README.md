@@ -1,10 +1,15 @@
-# Etude_Faille_CVE_12636
-## Téléchargement du depot GITHUB sur votre machine virtuelle
+# Etude_Faille_CVE_12635 & 12636
+Travail r
+## Etape 0 : Mise en place de l'environnement de travail
+### A partir d'une Docker File 
+
+### Téléchargement du depot GITHUB sur votre machine virtuelle
    https://github.com/Guillaumeclavel/Etude_Faille_CVE_12636  
 
 ==> Dépot Public : pas de droit accès à gérer 
 
 ## Extraction et positionnement dans le répertoire de travail 
+
  
 ## ETAPE 1 : Création du docker contenenat le serveur "couchdb"
 ### Lancement du docker-compose ou 
