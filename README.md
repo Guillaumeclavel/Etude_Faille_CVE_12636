@@ -12,4 +12,5 @@ Disponible sur ce dépot
 
 # Réference
    - https://www.cvedetails.com/cve/CVE-2017-12635/
+   - https://www.cvedetails.com/cve/CVE-2017-12636/
    
