@@ -1,0 +1,26 @@
+version: "2"
+
+services:
+  mycouchdb:
+    image: vulhub/couchdb:1.6.0
+    ports:
+      - "5984:5984"
+
+#    volumes:
+#      - ./SiteVulnerable:/source
+#    command: /opt/play/play run yabe
+# En décommentant ces lignes on peut avoir le service non
+# protégé par la WAF pour comparer le comportement
+# avec (en se connectant à localhost:9000) et
+# sans WAF (en se connectant à localhost:9000)
+#    ports:
+#      - "9000:9000"
+
+  waf:
+    build: ./waf/
+    links:
+      - mycouchdb
+    ports:
+      - "8080:80"
+    command: /usr/sbin/apachectl -D FOREGROUND 
+
